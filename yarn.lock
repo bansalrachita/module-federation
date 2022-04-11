@@ -7022,6 +7022,7 @@ __metadata:
   resolution: "module-federation@workspace:."
   dependencies:
     lerna: ^4.0.0
+    typescript: ^4.6.3
   languageName: unknown
   linkType: soft
 
