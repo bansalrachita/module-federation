@@ -2184,6 +2184,51 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@module-federation/component@workspace:packages/component":
+  version: 0.0.0-use.local
+  resolution: "@module-federation/component@workspace:packages/component"
+  dependencies:
+    "@babel/core": ^7.17.9
+    "@babel/preset-react": ^7.16.7
+    "@babel/preset-typescript": ^7.16.7
+    "@types/react": ^18.0.6
+    "@types/react-dom": ^18.0.2
+    babel-loader: ^8.2.5
+    html-webpack-plugin: ^5.5.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
+    typescript: ^4.6.3
+    webpack: ^5.72.0
+    webpack-cli: ^4.9.2
+    webpack-dev-server: ^4.8.1
+  languageName: unknown
+  linkType: soft
+
+"@module-federation/host@workspace:packages/host":
+  version: 0.0.0-use.local
+  resolution: "@module-federation/host@workspace:packages/host"
+  dependencies:
+    "@babel/core": ^7.17.9
+    "@babel/preset-env": ^7.16.11
+    "@babel/preset-react": ^7.16.7
+    "@babel/preset-typescript": ^7.16.7
+    "@types/react": ^18.0.1
+    "@types/react-dom": ^18.0.0
+    babel-loader: ^8.2.4
+    css-loader: ^6.7.1
+    file-loader: ^6.2.0
+    html-webpack-plugin: ^5.5.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
+    serve: ^13.0.2
+    style-loader: ^3.3.1
+    typescript: ^4.6.3
+    webpack: ^5.72.0
+    webpack-cli: ^4.9.2
+    webpack-dev-server: ^4.8.1
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -2649,6 +2694,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-dom@npm:^18.0.2":
+  version: 18.0.2
+  resolution: "@types/react-dom@npm:18.0.2"
+  dependencies:
+    "@types/react": "*"
+  checksum: 2b0b138d8634ccfd8a86b17cb5414b122ee0cb6f650377d772f6008761a27e4c2531c08e3cab71aaa19b6893af6a508c664aa314db3ebcff5b8179173c9c9307
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:^18.0.1":
   version: 18.0.1
   resolution: "@types/react@npm:18.0.1"
@@ -2657,6 +2711,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: ede927ed3766fef5fec513fe75e79180bb3c97d21ca7707321e969193c596bc4a531160238546a845e4131df02ec9be7803277a268bc270156362d16b29b4ffb
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.0.6":
+  version: 18.0.6
+  resolution: "@types/react@npm:18.0.6"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 368b40176f0dab30a611c3263bf1d9878cebede9ce8015bc5661a396787dbe41f0b667b8d6d448dea7bc8c0557bf3cb329ab2b16ad2dacb18eaa764358bd16d4
   languageName: node
   linkType: hard
 
@@ -3296,6 +3361,21 @@ __metadata:
     "@babel/core": ^7.0.0
     webpack: ">=2"
   checksum: 4968251fc4af4279c8e44adba523ed4ad18942f04b37061298e81640d09a570f66e6d53948e39a7d3c3d24ca2b025f0a07c606fadd8e3fbffa8912fd789fd4f0
+  languageName: node
+  linkType: hard
+
+"babel-loader@npm:^8.2.5":
+  version: 8.2.5
+  resolution: "babel-loader@npm:8.2.5"
+  dependencies:
+    find-cache-dir: ^3.3.1
+    loader-utils: ^2.0.0
+    make-dir: ^3.1.0
+    schema-utils: ^2.6.5
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    webpack: ">=2"
+  checksum: a6605557885eabbc3250412405f2c63ca87287a95a439c643fdb47d5ea3d5326f72e43ab97be070316998cb685d5dfbc70927ce1abe8be7a6a4f5919287773fb
   languageName: node
   linkType: hard
 
@@ -5514,31 +5594,6 @@ __metadata:
   checksum: 3d4d6babccccd79c5c5a3f929a68af33360d6445587d628087f39a965079d84f18ce9c3d3f917ee1e3978916fc833bb8b29377c3b403f919426f91bc6965e7a7
   languageName: node
   linkType: hard
-
-"host@workspace:packages/host":
-  version: 0.0.0-use.local
-  resolution: "host@workspace:packages/host"
-  dependencies:
-    "@babel/core": ^7.17.9
-    "@babel/preset-env": ^7.16.11
-    "@babel/preset-react": ^7.16.7
-    "@babel/preset-typescript": ^7.16.7
-    "@types/react": ^18.0.1
-    "@types/react-dom": ^18.0.0
-    babel-loader: ^8.2.4
-    css-loader: ^6.7.1
-    file-loader: ^6.2.0
-    html-webpack-plugin: ^5.5.0
-    react: ^18.0.0
-    react-dom: ^18.0.0
-    serve: ^13.0.2
-    style-loader: ^3.3.1
-    typescript: ^4.6.3
-    webpack: ^5.72.0
-    webpack-cli: ^4.9.2
-    webpack-dev-server: ^4.8.1
-  languageName: unknown
-  linkType: soft
 
 "hosted-git-info@npm:^2.1.4":
   version: 2.8.9
