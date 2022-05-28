@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack").container
   .ModuleFederationPlugin;
+const deps = require("./package.json").dependencies;
 
 module.exports = {
   entry: "./src/index",
@@ -28,6 +29,11 @@ module.exports = {
           presets: ["@babel/preset-react", "@babel/preset-typescript"],
         },
       },
+      {
+        test: /\.css$/i,
+        exclude: /node_modules/,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
     ],
   },
   plugins: [
@@ -36,7 +42,15 @@ module.exports = {
       remotes: {
         app2: "app2@http://localhost:3002/remoteEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: {
+        react: {
+          singleton: true,
+        },
+        "react-dom": {
+          singleton: true,
+          requiredVersion: deps["react-dom"],
+        },
+      },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",

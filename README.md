@@ -4,9 +4,17 @@
 
 - `Corepack enable`: Enable node/corepack binaries for managing package maager versions.
 - `yarn set version stable`: Fetch the latest stable version of yarn using corepack.
-- `yarn init -2`: Setup a yarn project
+- `yarn init -2`: Setup a yarn project.
 - `yarn lerna init`: Initialize the repo with lerna.
 - `yarn dlx @yarnpkg/sdks vscode`: Configuration for PnP to work with VSCode, [more](https://next.yarnpkg.com/getting-started/editor-sdks). Note: `typescript` must be installed as a dev dependency.
+
+## commands
+
+- `yarn workspace <name> add -D <package-name>`: adds package to a workspace.
+
+## Styling
+
+Tailwind CSS
 
 ## Application architechture
 
@@ -63,3 +71,4 @@ Approach 1 seems to be the best options for developing cross-platform web only a
 - [React Native Web](https://blog.logrocket.com/complete-guide-react-native-web/)
 - [React-responsive](https://blog.logrocket.com/using-react-responsive-to-implement-responsive-design/)
 - https://necolas.github.io/react-native-web/docs/
+- https://github.com/yocontra/react-responsive

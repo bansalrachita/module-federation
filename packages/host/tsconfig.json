@@ -3,6 +3,7 @@
     "sourceMap": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "lib": ["ES2015", "DOM"]
   },
